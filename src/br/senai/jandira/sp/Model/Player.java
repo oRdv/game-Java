@@ -1,0 +1,26 @@
+package br.senai.jandira.sp.Model;
+
+public class Player {
+    public String nome;
+    public String skin;
+    private int life;
+
+    public Player(){
+        life = 100;
+    }
+    public int getLife(){
+        return life;
+    }
+
+    public void SubtrairVida(int danoEnemy){
+
+        life -= danoEnemy;
+
+        if (life < 0){
+            life = 0;
+        }
+
+    }
+
+
+}
